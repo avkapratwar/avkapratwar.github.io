@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kapratwar Abhishek</title>
+<link rel="stylesheet" href="https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css"/>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js"></script>
+
+</head>
+<style>
+    .cmd, .cmd div, .cmd span, .terminal, .terminal-output > 
+    :not(.raw) a, .terminal-output > :not(.raw) div, .terminal-output > :not(.raw) span {
+    font-size: calc(var(--size, 1)*18px);
+    line-height: calc(var(--size, 1)*40px);
+    } 
+    p{
+        color:white;
+        font-size:18px; 
+    }
+    ul#menu li {
+  display:inline;
+}
+        /* .terminal{
+       --background: white;
+  --animation: terminal-bar;
+  --font-size : 20px;
+    } */
+</style>
+
+<body>  
+   
+    <script>
+   
+     $('body').terminal({
+        
+        
+    title: function() {
+        // return fetch('https://terminal.jcubic.pl')
+        //     .then(r => r.text())
+        //     .then(html => html.match(/<title>([^>]+)<\/title>/)[1]);
+        var d = $('#first').contents()
+        this.echo(d)
+    },
+    help : function(){
+        this.echo ('[[;#e3eaa7;black]Keywords            Description]')
+        this.echo('[[;#e3eaa7;black]------------------------------------------------------]');
+        this.echo('[[;#e3eaa7;black] about					 More about MySelf]');
+		this.echo('[[;#e3eaa7;black] skills					   What skills I possess]');
+		this.echo('[[;#e3eaa7;black] education			    What degrees I got]');
+        this.echo('[[;#e3eaa7;black] work					   Where do I Work]');
+        this.echo('[[;#e3eaa7;black] currentproject		  What project I am working currently]');
+        this.echo('[[;#e3eaa7;black] projects				  What projects I have done so far]');
+        this.echo('[[;#e3eaa7;black] contact				 How to reach me]');        
+        //this.echo('[[;#e3eaa7;black] job					      Where I am searching for  opportunity]');
+        this.echo('[[;#e3eaa7;black] thanks					Thank You]');     
+        this.echo('[[;#e3eaa7;black] clear					   Clear the terminal]');
+    },   
+    about: function(){                  
+            var d = $('#about1').contents()
+        this.echo(d)
+    },
+    work:function(){
+        var d = $('#work').contents()
+        this.echo(d)
+    },
+    skills: function() {
+        var d = $('#Skills').contents()
+        this.echo(d)
+    },
+    projects:function(){
+        var d = $('#Projects').contents()
+        this.echo(d)
+    },
+    education: function(){         
+        var d = $('#Education').contents()
+        this.echo(d)
+    },
+    contact: function(){         
+        var d = $('#Contact').contents()
+        this.echo(d)
+    },
+    clear:function(){
+        console.clear()
+    },  
+    job:function(){
+        var d = $('#Job').contents()
+        this.echo(d) 
+    },  
+    currentproject:function(){
+        var d = $('#CurrentProject').contents()
+        this.echo(d) 
+    },
+    thanks:function(){
+        var d = $('#end').contents()
+        this.echo(d) 
+    },
+    
+
+    }, 
+   
+    {
+        greetings: "[[b;#deeaee;black;30px] Hi Folks....  To know more about me please type ] [[b;#ffbf01;black]'help'].",
+        name: 'js_demo',           
+        prompt: '[[i;white;black]akapratwar] [[g;white;black]$] '
+        
+    });
+	
+    </script>
+    <div id = 'first' style = 'visibility: hidden; color:white;font-size : 40px;'>Abhishek Kapratwar</div>></div>
+    <div id = 'about1' style = 'visibility: hidden; color:gainsboro'> 
+        <p>Hi folks, this is Abhishek, a young energetic result oriented professional offering <b>1.5 years</b> of experience, currently associated with <b>Virtusa Consulting Services. Pvt. Ltd, Pune</b> as a <b>Software Developer</b>. Extended expertise in <b>Java, Spring MVC, Hibernate, HTML, MySQL</b> and <b>Penetration Testing</b>.</p> 
+        
+    </div>
+    <div id = 'work'>
+        <ul>
+            <li style = "color:orchid;font-size:18px;" ><b>Virtusa Consulting Services Pvt Ltd - Software Developer</b></li>
+            <ul>
+                <li type='square' style = 'color:gainsboro;font-size:18px;'>June 2019 - till Date</li>
+                <li type='square' style = 'color:gainsboro;font-size:18px;'><b>Key Deliverables:</b></li>
+                <ul>
+                    <li type ='circle' style='color:gainsboro;font-size:18px;'>Involved in requirement gathering and analysis.</li>
+                    <li type ='circle' style='color:gainsboro;font-size:18px;'>Involved in Software Development (Functionality implementation with Unit testing).</li>
+                    <li type ='circle' style='color:gainsboro;font-size:18px;'>Providing technical and functional  assistance whenever needed to team members</li>
+                    <li type ='circle' style='color:gainsboro;font-size:18px;'>Involved in code reviews.</li>                                      
+                </ul>
+            </ul>
+        </ul>
+    </div>
+    <div id = 'Skills'>
+        <ul>
+            <li style =  "color:orchid;font-size:18px;" ><b>Operating Systems:</b><span style="color:gainsboro"> Linux, Windows</span></li>
+            <li style =  "color:orchid;font-size:18px;" ><b>Programming Languages:</b><span style="color:gainsboro"> Java, C, C++</span></li>
+            <li style =  "color:orchid;font-size:18px;" >
+                <b>Technologies:</b>
+                <span style="color:gainsboro">Spring (Framework, MVC), Hibernate</span>
+            </li>
+            <li style =  "color:orchid;font-size:18px;" >
+                <b>Database:</b>
+                <span style="color:gainsboro">MySQL, Oracle</span>
+            </li>
+            <li style =  "color:orchid;font-size:18px;" >
+                <b>Other Domains: </b>
+                <span style="color:gainsboro">Ethical Hacking, Penetration Testing</span>
+            </li>
+            <li style =  "color:orchid;font-size:18px;" ><b>Code Management Tool:</b><span style="color:gainsboro"> GIT</span></li>
+            </ul>
+    </div>
+    <div id = 'Projects'>
+        <ul>
+            <li style = "color:orchid;font-size:18px;" ><b>VCarPooling (2019)</b></li>
+            <ul>
+                <li type='square' style = 'color:gainsboro;font-size:18px;'>This project aims to provide Carpool to Riders. In this system firstly provider has to provide pooling service of his own car to the riders by filling all necessary details. After provider provides the car, the riders can opt for car pooling service through providers pool. Once the rider books his ride with provider the details of both provider and riders will be exchanged with each other through mailing system. Along with this, this system is configured with Google Maps API and additional Paytm Payment Gateway.
+                </li>
+                <li type='square' style = 'color:gainsboro;font-size:18px;'>Technologies used : Spring, Hibernate
+                </li>
+            </ul>       
+        </ul>
+		
+		<ul>
+            <li style = "color:orchid;font-size:18px;" ><b>Stock Market Prediction (2019)</b></li>
+            <ul>
+                <li type='square' style = 'color:gainsboro;font-size:18px;'>This project aims to provide prediction of stock trends, we would collect historical data which is available on various websites, then on this data we would apply Naïve Bayes algorithm and get the predictions. We can even automate the process of collecting the data related to stock market on which the predication is to be made, we can do this with the help of various libraries that are available in python. The final outcome of the system will be a statistical representation which might be in the form of pie chart, bar graph, or line graph of the prediction made by the Naïve Bayes algorithm.
+                </li>
+                <li type='square' style = 'color:gainsboro;font-size:18px;'>Technologies used : Python, MySQL
+                </li>
+            </ul>       
+        </ul>
+		
+		<ul>
+            <li style = "color:orchid;font-size:18px;" ><b>Simple Airline Reservation System. (2018)</b></li>
+            <ul>
+                <li type='square' style = 'color:gainsboro;font-size:18px;'>The system is developed to provide basic functionality of booking, cancelling and rescheduling airline ticket with the multi-client-server architecture. To handle reliability or fault tolerance and replication of system we have implemented 2 servers and the backup of this two servers will be at one other system. To achieve replication we use logs at server side.
+                </li>
+                <li type='square' style = 'color:gainsboro;font-size:18px;'>Technologies used : Java, MySQL
+                </li>
+            </ul>       
+        </ul>
+		
+		<ul>
+            <li style = "color:orchid;font-size:18px;" ><b>Local Help App. (2017)</b></li>
+            <ul>
+                <li type='square' style = 'color:gainsboro;font-size:18px;'>Application is developed with the concern of Women Security in today’s age. This Application typically takes the co-ordinates of the user and send those to the person whose contact number is hardcoded in source code itself, and thus might be more helpful for women while travelling to unknown places.
+                </li>
+                <li type='square' style = 'color:gainsboro;font-size:18px;'>Technologies used : Java
+                </li>
+            </ul>       
+        </ul>
+		
+		<ul>
+            <li style = "color:orchid;font-size:18px;" ><b>Software Piracy Protection System. (2016)</b></li>
+            <ul>
+                <li type='square' style = 'color:gainsboro;font-size:18px;'>This project is developed to maintain software copyright protection and assure that it is accessed only by the authenticated user.
+                </li>
+                <li type='square' style = 'color:gainsboro;font-size:18px;'>Technologies used : Java, MySQL
+                </li>
+            </ul>       
+        </ul>
+
+    </div>
+    <div id = 'Education'>
+        <ul>
+            <li style = "color:orchid;font-size:18px;" ><b>Modern Education Society’s College of Engineering, Pune</b></li>
+            <ul>
+                <li type='square' style = 'color:gainsboro;font-size:18px;'>Computer Engineering - CGPA : 7.96 </li>
+                <li type='square' style = 'color:gainsboro;font-size:18px;'>2019</li>
+            </ul>
+                
+            <li style = "color:orchid;font-size:18px;" ><b>Gramin Polytechnic, Vishnupuri, Nanded</b></li>
+            <ul>
+                <li type='square' style = 'color:gainsboro;font-size:18px;'>Computer Engineering - Percentage : 80.25</li>
+                <li type='square' style = 'color:gainsboro;font-size:18px;'><b>2016</b></li>
+            </ul>
+			
+			<li style = "color:orchid;font-size:18px;" ><b>Saraswati Vidya Mandir, Kinwat Dist. Nanded</b></li>
+            <ul>
+                <li type='square' style = 'color:gainsboro;font-size:18px;'>SSC - Percentage : 88.00</li>
+                <li type='square' style = 'color:gainsboro;font-size:18px;'><b>2013</b></li>
+            </ul>
+            
+        </ul>
+    </div>
+    <div id = 'Contact'>
+        <ul>
+            <li style = "color:orchid;font-size:18px;"><b>Email:</b><span style = "color:gainsboro"> abhikapratwar@gmail.com</span></li>
+        </ul>
+            <ul id = menu>
+                <li  style = "color:orchid;font-size:18px;"><a href="https://www.linkedin.com/in/abhishekkapratwar-7a3b74122/" target="_blank">LinkedIn</a>|</li>
+                <li  style = "color:orchid;font-size:18px;"><a href = "https://github.com/avkapratwar">GitHub</a>|</li>
+            </ul>          
+        
+    </div>
+    
+    <div id = 'CurrentProject'>
+        <ul>
+            <li style = "color:orchid;font-size:18px;" ><b>BT-Yukon</b></li>
+            <ul>
+                <li type='square' style = 'color:gainsboro;font-size:18px;'>This project is associated with British Telecom, so as it is related to Telecommunication domain in which we have developed various user stories to add functionalities to existing project using java and Oracle Database.
+                </li>
+                <li type='square' style = 'color:gainsboro;font-size:18px;'>Technologies used : Java, Oracle
+                </li>
+            </ul>       
+        </ul>
+        </span>
+    </div>
+    <div id = 'end' style = 'color:gainsboro'>
+        <p>Thanks for visiting!!</p>
+		<span style = "color:orchid;font-size:18px;"><b>Actively looking for job opportunity in Java, Spring Developer in Pune, Hyderabad. If you have any,please feel free to contact.</b></span>
+        <p style = 'color:goldenrod'>** HAPPY CODING **</p>
+    </div>
+
+</body>
+</html>
