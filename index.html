@@ -20,24 +20,16 @@
     ul#menu li {
   display:inline;
 }
-        /* .terminal{
-       --background: white;
-  --animation: terminal-bar;
-  --font-size : 20px;
-    } */
+
 </style>
 
 <body>  
    
     <script>
    
-     $('body').terminal({
-        
-        
+    $('body').terminal({
+                
     title: function() {
-        // return fetch('https://terminal.jcubic.pl')
-        //     .then(r => r.text())
-        //     .then(html => html.match(/<title>([^>]+)<\/title>/)[1]);
         var d = $('#first').contents()
         this.echo(d)
     },
@@ -105,13 +97,13 @@
     });
 	
     </script>
-    <div id = 'first' style = 'visibility: hidden; color:white;font-size : 40px;'>Abhishek Kapratwar</div>></div>
-    <div id = 'about1' style = 'visibility: hidden; color:gainsboro'> 
+    <div id = 'first' style = 'display: none; color:white;font-size : 40px;'>Abhishek Kapratwar</div>></div>
+    <div id = 'about1' style = 'display: none; color:white;font-size : 40px;'> 
         <p>Hi folks, this is Abhishek, a young energetic result oriented professional offering <b>1.5 years</b> of experience, currently associated with <b>Virtusa Consulting Services. Pvt. Ltd, Pune</b> as a <b>Software Developer</b>. Extended expertise in <b>Java, Spring MVC, Hibernate, HTML, MySQL</b> and <b>Penetration Testing</b>.</p> 
         
     </div>
 	
-	<div id = 'Skills'>
+	<div id = 'Skills' style = 'display: none; color:white;font-size : 40px;'>
         <ul>
             <li style =  "color:orchid;font-size:18px;" ><b>Operating Systems:</b><span style="color:gainsboro"> Linux, Windows</span></li>
             <li style =  "color:orchid;font-size:18px;" ><b>Programming Languages:</b><span style="color:gainsboro"> Java, C, C++</span></li>
@@ -131,7 +123,7 @@
             </ul>
     </div>
 	
-	<div id = 'Education'>
+	<div id = 'Education' style = 'display: none; color:white;font-size : 40px;'>
         <ul>
             <li style = "color:orchid;font-size:18px;" ><b>Modern Education Society’s College of Engineering, Pune</b></li>
             <ul>
@@ -154,7 +146,7 @@
         </ul>
     </div>
 	
-    <div id = 'work'>
+    <div id = 'work' style = 'display: none; color:white;font-size : 40px;'>
         <ul>
             <li style = "color:orchid;font-size:18px;" ><b>Virtusa Consulting Services Pvt Ltd - Software Developer</b></li>
             <ul>
@@ -170,7 +162,7 @@
         </ul>
     </div>
     
-	<div id = 'CurrentProject'>
+	<div id = 'CurrentProject' style = 'display: none; color:white;font-size : 40px;'>
         <ul>
             <li style = "color:orchid;font-size:18px;" ><b>BT-Yukon</b></li>
             <ul>
@@ -183,7 +175,7 @@
         </span>
     </div>
 	
-    <div id = 'Projects'>
+    <div id = 'Projects' style = 'display: none; color:white;font-size : 40px;'>
         <ul>
             <li style = "color:orchid;font-size:18px;" ><b>VCarPooling (2019)</b></li>
             <ul>
@@ -237,7 +229,7 @@
 
     </div>
     
-    <div id = 'Contact'>
+    <div id = 'Contact' style = 'display: none; color:white;font-size : 40px;'>
         <ul>
             <li style = "color:orchid;font-size:18px;"><b>Email:</b><span style = "color:gainsboro"> abhikapratwar@gmail.com</span></li>
         </ul>
@@ -252,7 +244,7 @@
     </div>
     
     
-    <div id = 'Thanks' style = 'color:gainsboro'>
+    <div id = 'Thanks' style = 'display: none; color:gainsboro'>
         <p>Thanks for visiting!!</p>
 		<span style = "color:orchid;font-size:18px;"><b>Actively looking for job opportunity in Java, Spring Developer in Pune, Hyderabad. If you have any,please feel free to contact.</b></span>
         <p style = 'color:goldenrod'>** HAPPY CODING **</p>
